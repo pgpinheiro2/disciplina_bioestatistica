@@ -769,7 +769,22 @@ $$P\left(\bigcup_{i=1}^{\infty} A_i \right) = \sum_{i=1}^{\infty} P(A_i)$$
 class: middle, center, inverse
 # Técnicas de Amostragem
 
-- Amostragem 
+
+---
+# Tipos de Amostragem
+
+- Amostragem Probabilística
+    - Amostragem Aleatória Simples
+    - Amostragem Estratificada
+    - Amostragem por Conglomerados ou Clusters
+    - Amostragem Sistemática
+
+- Amostragem Não-Probabilística
+    - Conveniência
+    - Criterial
+    - Acidental
+    - Bola de neve
+    - Por cotas
 
 
 ---
