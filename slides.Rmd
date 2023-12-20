@@ -17,6 +17,7 @@ background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharin
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(tidyverse)
 ```
 
 ???
@@ -599,12 +600,98 @@ background-position: 50% 90%
 # Gráficos
 
 ---
+# Gráfico de Barras
+
+```{r graf-bar, fig.height=4, dev='svg', echo=FALSE}
+iris |> 
+  sample_n(size = 0.3*150) |> 
+  count(Species) |> 
+  ggplot(mapping = aes(x = n, y = Species))+
+  geom_bar(stat = "identity", width = 0.5)+
+  labs(y = "Espécies", x = "Frequência")
+```
+
+
+---
+# Gráfico de Colunas
+
+```{r graf-col, fig.height=4, dev='svg', echo=FALSE}
+iris |> 
+  sample_n(size = 0.3*150) |> 
+  count(Species) |> 
+  ggplot(mapping = aes(x = n, y = Species))+
+  geom_bar(stat = "identity", width = 0.5)+
+  labs(y = "Espécies", x = "Frequência")+
+  coord_flip()
+```
+
+---
+# Gráfico de Setores
+
+```{r graf-set, fig.height=4, dev='svg', echo=FALSE}
+iris |> 
+  sample_n(size = 0.3*150) |> 
+  count(Species) |> 
+  ggplot(mapping = aes(x = Species, y = "", fill = Species))+
+  geom_bar(stat = "identity", width = 1)+
+  labs(x = "", y = "")+
+  coord_polar(theta = "x", start = 0)+
+  theme_minimal()
+```
+
+---
+# Dispersão Univariada
+
+```{r graf-dotplot, fig.height=4, dev='svg', echo=FALSE, message=FALSE, warning=FALSE}
+iris |> 
+  ggplot(mapping = aes(x = Sepal.Length))+
+  geom_dotplot(stackdir = "up", color = "black", dotsize = 1)+
+  labs(x = "Comprimento da sépala")
+```
+
+
+---
+# Histograma
+
+```{r graf-histo, fig.height=4, dev='svg', echo=FALSE, message=FALSE, warning=FALSE}
+iris |> 
+  ggplot(mapping = aes(x = Sepal.Length))+
+  geom_histogram(color = "black")+
+  labs(x = "Comprimento da sépala", y = "Frequência")+
+  ylim(0,13)
+```
+
+
+---
+# Gráfico de Dispersão
+
+```{r graf-dis, fig.height=4, dev='svg', echo=FALSE}
+iris |> 
+  ggplot(mapping = aes(x = Sepal.Length, y = Sepal.Width))+
+  geom_point()+
+  labs(x = "Comprimento da sépala", y = "Largura da sépala")
+```
+
+
+---
+background-image: url("figs_aulas/cresc_pop_hum.png")
+background-size: 600px
+background-position: 50% 70%
+# Gráfico de linha
+
+- Crescimento Populacional
+
+
+---
 class: middle, center, inverse
 # Medidas de Tendência Central
 
 ---
 # Médias
 
+1. Média Aritmética
+
+$$\bar{x} = \frac{1}{n} \sum_{i=1}^{n}x_i$$
 ---
 # Mediana
 
@@ -682,6 +769,8 @@ $$P\left(\bigcup_{i=1}^{\infty} A_i \right) = \sum_{i=1}^{\infty} P(A_i)$$
 class: middle, center, inverse
 # Técnicas de Amostragem
 
+- Amostragem 
+
 
 ---
 class: middle, center, inverse
@@ -700,7 +789,6 @@ class: middle, center, inverse
 
 
 ---
-<!--
 background-image: url("figs_aulas/familia.png")
 background-size: 210px
 background-position: 90% 20%
@@ -723,5 +811,3 @@ knitr::include_graphics("https://media1.giphy.com/media/3oz8xIsloV7zOmt81G/giphy
 - *Endereço Profissional*: UNIFAP, *campus* Marco Zero do Equador - Pró-reitoria de Planejamento.
 
 - Feliz Natal e próspero Ano-Novo!!!
-
--->
