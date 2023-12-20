@@ -568,7 +568,7 @@ Total                    |       5.377
 # Frequência relativa
 
 - Equação para o cálculo de frequências:
-$$\textit{fr} = \frac{\textit{fa}}{n}$$
+$$\text{fr} = \frac{\text{fa}}{n}$$
 em que:
 
 $fr$ é a Frequência relativa;
