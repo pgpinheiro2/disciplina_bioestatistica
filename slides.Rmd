@@ -711,6 +711,11 @@ class: middle, center, inverse
 ---
 # Variância e Desvio-padrão
 
+- Variância ($s^2$):
+$$s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2$$
+- Desvio-Padrão ($s$):
+
+$$s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2}$$
 
 ---
 class: middle, center, inverse
