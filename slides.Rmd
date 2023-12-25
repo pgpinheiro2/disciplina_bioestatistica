@@ -688,15 +688,51 @@ class: middle, center, inverse
 # Medidas de Tendência Central
 
 ---
-# Médias
+# Média
 
 1. Média Aritmética:
 
 $$\bar{x} = \frac{1}{n} \sum_{i=1}^{n}x_i$$
+
+---
+# Média [exemplo]
+
+Seja a variável *X: altura (m)* de alguns voluntários e voluntárias de nossa turma com *X = (1,78; 1,81; 1,63; 1,61; 1,55; 1,60; 1,70; 1,65; 1,75; 1,47; 1,49; 1,68)*.
+
+
+Então, o cálculo da média será:
+
+--
+
+Como temos *12* observações, $n=12$, logo:
+
+$$\bar{x} = \frac{1}{12} \times (1,78 + 1,81 + 1,63 + 1,61 + 1,55 + 1,60 + 1,70 + 1,65 + 1,75 + 1,47 + 1,49 + 1,68)  $$
+$$\bar{x} = \frac{1}{12} \times 19,72$$
+
+$$\bar{x} \approx 1,64 \ \text{m}$$
+
+
+
 ---
 # Mediana
 
-$$Md = \left\{ \begin{array}{ll} \frac{x_{(\frac{n}{2})}+x_{(\frac{n}{2}+1)}}{2} & \text{, se } n \text{ é par} \\ x_{(\frac{n+1}{2})} & \text{, se } n \text{ é ímpar} \end{array}\right.$$
+1. Mediana (Md):
+
+$$Md = \left\{ \begin{array}{ll} \frac{x_{(\frac{n}{2})}+x_{(\frac{n}{2}+1)}}{2} & \text{, se } n \text{ é par;} \\ x_{(\frac{n+1}{2})} & \text{, se } n \text{ é ímpar.} \end{array}\right.$$
+
+em que: $x_{(\frac{n}{2})}$, $x_{(\frac{n}{2}+1)}$ e $x_{(\frac{n+1}{2})}$ são as estatísticas de ordem, ou seja, $x_{(1)} \leq x_{(2)} \leq \dots \leq x_{(n-1)} \leq x_{(n)}$ a ordenação das observações também conhecida como *rol*.
+
+---
+# Mediana [exemplo]
+
+Consideremos o mesmo conjunto de dados da variável *X: altura (m)*.
+
+Rol: *1,47; 1,49; 1,55; 1,60; 1,61; 1,63; 1,65; 1,68; 1,70; 1,75; 1,78; 1,81*.
+
+Como a amostra tem $n = 12$ (*n* é par), então:
+
+
+$$Md =  \frac{x_{(6)} + x_{(7)}}{2} = \frac{1,63 + 1,65}{2} = \frac{3,28}{2} = 1,64$$
 
 ---
 # Moda
