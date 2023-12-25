@@ -1,8 +1,10 @@
 
-# disciplina_bioestatistica
+# Disciplina: Bioestatística
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-Aqui estão os slides da disciplina de Bioestatística ministrada no Polo Quilombola Abacate de Pedreira.
+No link a seguir estão todos os slides elaborados para a disciplina de Bioestatística do Curso de Ciências Biológicas - Licenciatura do Polo Quilombola Abacate de Pedreira da UNIFAP.
+
+Link: [>> Clique aqui para acessar os Slides <<](https://pgpinheiro2.github.io/disciplina_bioestatistica/slides).
 
