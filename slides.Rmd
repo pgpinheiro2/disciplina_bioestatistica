@@ -175,6 +175,13 @@ background-position: 50% 70%
     - Rao, C. R. (1995):
 
 $$\text{Conhecimento útil} = \text{Conhecimento sobre a Incerteza} + \text{Conhecimento Incerto}$$
+---
+class: center
+## [11:40] [12:41] "Não conheço essas senhoras."
+
+<iframe src="https://player.vimeo.com/video/898762727?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="671" height="377" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="CHVS_T06_EP14"></iframe>
+
+
 
 ---
 # Dado
@@ -833,10 +840,6 @@ class: middle, center, inverse
     - Por cotas
 
 
----
-class: middle, center, inverse
-# Teste t
-
 
 ---
 class: middle, center, inverse
@@ -849,16 +852,13 @@ class: middle, center, inverse
 
 
 
+
+
+
 ---
-background-image: url("figs_aulas/familia.png")
-background-size: 210px
-background-position: 90% 20%
-# Meus contatos
+## Meus contatos
 
-```{r obrigado, echo=FALSE, fig.align="left", out.height="150px"}
-knitr::include_graphics("https://media1.giphy.com/media/3oz8xIsloV7zOmt81G/giphy.gif")
-```
-
+.pull-left[
 - *e-mail*: [pgpinheiro@unifap.br](mailto: pgpinheiro@unifap.br)
 
 - *Whatsapp* ou *Telegram*: (96) [9](9)9194-2141
@@ -872,3 +872,11 @@ knitr::include_graphics("https://media1.giphy.com/media/3oz8xIsloV7zOmt81G/giphy
 - *Endereço Profissional*: UNIFAP, *campus* Marco Zero do Equador - Pró-reitoria de Planejamento.
 
 - Feliz Natal e próspero Ano-Novo!!!
+
+]
+
+.pull-right[
+```{r, echo=FALSE, fig.align="center", out.width="50%"}
+knitr::include_graphics("figs_aulas/familia.png")
+```
+]
